@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Webkit;
 
 namespace Navegador
 {
@@ -14,6 +15,15 @@ namespace Navegador
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            Button btn = FindViewById<Button>(Resource.Id.button1);
+            WebView web = FindViewById<WebView>(Resource.Id.webView1);
+
+            btn.Click += delegate
+            {
+                web.LoadUrl(" ");
+
+            };
         }
     }
 }
