@@ -21,7 +21,7 @@ namespace Navegador
 
             btn.Click += delegate
             {
-                web.LoadUrl(" ");
+                web.LoadUrl("https://www.twitch.tv ");
 
             };
         }
